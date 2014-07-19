@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="textField" />
+<div id="result" />
+
+<script>
+  var text = document.getElementById("textField").value;
+  var resultWrapper = document.getElementById('result');
+</script>
+
+
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+	var result = document.getElementById("textField").value;
+	var res = eval(result);
+    document.getElementById("demo").innerHTML = res;
+}
+</script>
+</body>
+</html>
